@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: "Microsoft Yahei";
+	background-color: #DEDEDE;
+}
+/*nav导航栏*/
+nav {
+	height: 60px;
+	background-color: #333;
+}
+nav img {
+	height: 58px;
+	float: left;
+	margin: 1px 40px;
+}
+nav ul {
+	float: right;
+	margin: 20px 14px;
+}
+nav ul li {
+	display: inline;
+	padding-left: 10px;
+}
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 12px;
+}
+nav ul li a:hover {
+	color: #989797;
+}
+/*主体*/
+article, #pics, aside {
+	margin: 20px;
+	padding: 30px 20px;
+	background-color: white;
+	border: 1px solid #C9C9C9;
+	box-shadow: 2px 2px #7B7A7A;
+}
+article h2 {
+	font-size: 22px;
+}
+article h3 {
+	font-size: 16px;
+	margin-top: 14px;
+}
+article .info {
+	font-size: 13px;
+	margin-top: 20px;
+	text-indent: 0;
+	line-height: 10px;
+}
+article p {
+	font-size: 15px;
+	text-indent: 30px;
+	line-height: 26px;
+	margin: 14px 0;
+}
+article ul {
+	list-style: none;
+	margin: 14px 0 10px 20px;
+}
+article ul li {
+	font-size: 15px;
+	margin-bottom: 4px;
+}
+#pics {
+	overflow: hidden;
+}
+#pics h2 {
+	font-size: 22px;
+	padding-bottom: 18px;
+}
+div.kid {
+	border: 1px solid #C9C9C9;
+	height: 164px;
+	width: 150px;
+	margin: 10px;
+	float: left;
+}
+div.kid p {
+	text-align: center;
+	margin: 6px;
+	font-size: 14px;
+}
+div.kid img {
+	height: 110px;
+	margin: 6px 38px;
+}
+article ol {
+	margin-left: 46px;
+	
+}
+article ol li {
+	font-size: 15px;
+	padding-bottom: 5px;
+}
+article table {
+	border-collapse: collapse;
+	border: 1px solid #C9C9C9;
+	width: 100%;
+	font-size: 13px;
+}
+article table th {
+	background-color: black;
+	color: white;
+	text-align: left;
+	padding: 3px;
+}
+article table td {
+	padding: 3px;
+}
+article table td a {
+	color: purple;
+}
+article table #total {
+	background-color: #c6c6c6;
+}
+main {
+	margin-right: 360px;
+}
+div#container {
+	overflow: hidden;
+}
+/*aside侧栏*/
+aside {
+	padding-bottom: 10px;
+	float: right;
+	width: 300px;
+}
+aside h2 {
+	font-size: 16px;
+	border-left: 4px solid #c6c6c6;
+	padding: 10px;
+}
+aside form div {
+	font-size: 13px;
+	margin: 10px 0;
+}
+aside form div label.tips {
+	float: left;
+	width: 35%;
+	text-align: right;	
+	padding-right: 15px;
+}
+aside form div p {
+	color: #A9A9A9;
+	margin-left: 49%;
+	padding: 9px 0;
+	font-size: 12px;
+}
+aside input#email, aside input#password, aside input#password2 {
+	width: 125px;
+	height: 18px;
+}
+aside form div label.choice {
+	margin-right: 6px;
+}
+aside form textarea{
+	width: 59%;
+	height: 80px;
+}
+aside form #submit {
+	background-color: #3355d0;
+	border: none;
+	color: white;
+	font-size:16px;
+	width: 100%;
+	height: 40px;
+	margin-top: 8px;
+	border-radius: 10px;
+}
+/*footer页脚*/
+footer {
+	width: 100%;
+	height: 70px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+}
+footer p {
+	padding-top: 16px;
+}
