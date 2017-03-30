@@ -1,3 +1,44 @@
 @charset "UTF-8";
 /* CSS Document */
 
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 1386px;
+	width: 980px;
+	padding: 0 44px;
+	margin: auto;
+}
+header {
+	font-size: 12px;
+	font-family: SimHei;
+	position: relative;
+	border-bottom: 2px solid #938e8c;
+}
+header div {
+	width: 110px;
+	height: 61px;
+	background: #d45d5c;
+	color: #ffffff;
+}
+header div p {
+	position: absolute;
+	bottom: 2px;
+	left: 4px;
+}
+header #date {
+	color: #d45d5c;
+	float: right;
+	position: absolute;
+    right: 0;
+	bottom: 2px;
+}
+img#pic1 {
+	width: 641px;
+	height: 301px;
+}
+div.green {
+	
+}
