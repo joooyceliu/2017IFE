@@ -178,7 +178,23 @@ div#three {
 	position: relative;
 	padding-top: 40px;
 }
-div#three h1#the {
+div#left {
+	
+	width: 415px;
+}
+div#three h1#title1 {
+	font: bold 42px "黑体";
+	color: #11456b;
+	line-height: 16px;
+}
+div#three h1 span {
 	font: oblique bold 72px "黑体";
 	color: #f5e327;
+}
+div#three h1#title2 {
+	font: bold 33px "黑体";
+	color: #11456b;
+}
+div#three div#left header{
+	border-bottom: 2px solid black;
 }
