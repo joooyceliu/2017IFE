@@ -301,8 +301,8 @@ div#three div#right div#rightdown div#red p.word {
 }
 div#three div#right div#rightdown div#last {
 	position: absolute;
-	left: 290px;
-	width: 139px;
+	right: 30px;
+	width: 149px;
 	margin-top: 30px;
 	font: oblique 14px/16px "黑体";
 	color: #5a5b5b;
@@ -319,3 +319,6 @@ div#three div#right div#rightdown p#mark1 {
 }
 main {
 	border-bottom: 1px solid #938e8c;
+}
+
+/*剩下footer和red部分的文字置中问题*/
