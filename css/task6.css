@@ -9,6 +9,7 @@ body {
 	height: 1386px;
 	width: 980px;
 	margin: auto;
+	position: relative;
 }
 header {
 	font-size: 12px;
@@ -279,25 +280,26 @@ div#three div#right div#rightdown span {
 }
 div#three div#right div#rightdown div#red {
 	background: #d45d5c;
-	height: 86px;
+	height: 130px;
 	width: 260px;
 	color: #fff;
 	position: absolute;
 	bottom: 0;
-	padding: 37px 0px;
+	padding: 15px 0px;
 }
 div#three div#right div#rightdown div#red p#zero {
 	font: 110px "微软雅黑";
 	float: left;
 	border-right: 2px solid #fff;
-	padding-right: 6px;
+	padding: 0 6px;
 	margin-right: 10px;
 }
 div#three div#right div#rightdown div#red p.num {
 	font: oblique 21px/24px "黑体";
+	margin: 10px 0;
 }
 div#three div#right div#rightdown div#red p.word {
-	font: 12px/6px "黑体";
+	font: 12px/18px "黑体";
 }
 div#three div#right div#rightdown div#last {
 	position: absolute;
@@ -320,5 +322,17 @@ div#three div#right div#rightdown p#mark1 {
 main {
 	border-bottom: 1px solid #938e8c;
 }
-
-/*剩下footer和red部分的文字置中问题*/
+footer {
+	border-top: 1px solid #938e8c;
+	width: 892px;
+	font: 12px "黑体";
+	color: #d45d5c;
+	overflow: hidden;
+	position: absolute;
+	bottom: 70px;
+	left: 44px;
+}
+footer p {
+	float: right;
+}
+/*剩下red部分的文字置中问题*/
