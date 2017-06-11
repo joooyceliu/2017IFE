@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jstask5</title>
+<style type="text/css">
+  #show span{
+	  margin: 5px;
+	  background-color: red;
+	  width: 5px;
+	  height: 5px;
+	  display: inline-block;
+  }
+</style>
+</head>
+  
+<body>
+  <input type="text" name="num" id="num">
+  <input type="button" name="left-in" id="left-in" value="左侧入">
+  <input type="button" name="right-in" id="right-in" value="右侧入">
+  <input type="button" name="left-out" id="left-out" value="左侧出">
+  <input type="button" name="right-out" id="right-out" value="右侧出">
+  <div id="show">
+  </div>
+  <input type="button" name="bubble" id="bubble" value="冒泡排序">
+  
+  <script type="text/javascript">
+    var num = document.getElementById("num");
+	var left1 = document.getElementById("left-in");
+	var right1 = document.getElementById("right-in");
+	var left2 = document.getElementById("left-out");
+	var right2 = document.getElementById("right-out");
+	var show = document.getElementById("show");
+	var bubble = document.getElementById("bubble");
+	var i = 0;
+	/*入*/
+	function insert(direction){
+		if(isNaN(num.value)){
+			alert("请输入一个数字");
+		}else if(num.value < 10 || num.value > 100){
+			alert("请输入10到100之间的数字");
+		}else{
+			if(i <= 60){
+				var p = document.createElement("span");
+				p.style.height = num.value + "px";
+				if(direction == 1){
+					if(show.hasChildNodes()){
+						show.insertBefore(p, show.children[0]);
+					}
+				}else{
+					show.appendChild(p);
+				}
+				i++;
+			}else{
+				alert("添加数字不能超过60个");
+			}
+		}
+	}
+	
+	left1.onclick = function(){insert(1);}  //左侧入
+	right1.onclick = function(){insert(2);}  //右侧入
+	/*出*/
+	function del(directions){
+		if(show.childNodes.length == 0){
+			alert("当前没有数字");
+		}else{
+			var fchild = show.firstElementChild;
+			var lchild = show.lastElementChild;
+			if(directions == 1){
+				alert(parseInt(fchild.style.height));
+				show.removeChild(fchild);
+			}else if(directions == 2){
+				alert(parseInt(lchild.style.height));
+				show.removeChild(lchild);
+			}else{
+				alert(parseInt(directions.style.height));
+				show.removeChild(directions);
+				
+			}
+		}
+	}
+	left2.onclick = function(){del(1);}  //左侧出
+	right2.onclick = function(){del(2);}  //右侧出
+	show.onclick = function(){del(event.target);}  //点击某块自删除
+	
+	//冒泡排序
+	function bubbleSort(array){
+		var show = document.getElementById("show");
+		for(var i = 1; i < show.children.length; i++){
+			for(var j = 0; j < show.children.length - i; j++){
+				if(parseInt(show.children[j].style.height) > parseInt(show.children[j + 1].style.height)){
+					var temp = show.children[j].style.height;
+					show.children[j].style.height = show.children[j + 1].style.height;
+					show.children[j + 1].style.height = temp;
+				}
+			}
+		}
+	}
+	bubble.onclick = function(){bubbleSort();}  
+  </script>
+</body>
+</html>
