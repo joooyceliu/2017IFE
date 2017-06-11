@@ -14,34 +14,39 @@
 </head>
   
 <body>
-  <input type="text" name="num" id="num">
+  <textarea name="text" id="text"></textarea>
   <input type="button" name="left-in" id="left-in" value="左侧入">
   <input type="button" name="right-in" id="right-in" value="右侧入">
   <input type="button" name="left-out" id="left-out" value="左侧出">
   <input type="button" name="right-out" id="right-out" value="右侧出">
   <div id="show">
   </div>
+  <input type="text" name="finder" id="finder">
+  <input type="button" name="btn" id="btn" value="查询">
+  
   <script type="text/javascript">
-    var num = document.getElementById("num");
+    var text = document.getElementById("text");
 	var left1 = document.getElementById("left-in");
 	var right1 = document.getElementById("right-in");
 	var left2 = document.getElementById("left-out");
 	var right2 = document.getElementById("right-out");
 	var show = document.getElementById("show");
-	/*入*/
+	var finder = document.getElementById("finder");
+	var btn = document.getElementById("btn");
+	
+	//插入
 	function insert(direction){
-		if(isNaN(num.value)){
-			alert("请输入一个数字");
-		}else{
+		var arr = text.value.split(/\s+|\,|\，|\、/); //正则表达式，匹配空白符（包括换行）或逗号或顿号
+		for(var i = 0; i < arr.length; i++){
 			var p = document.createElement("span");
-			p.innerHTML = num.value;
+			p.innerHTML = arr[i];
 			if(direction == 1){
 				if(show.hasChildNodes()){
 					show.insertBefore(p, show.children[0]);
-				}
-			}else{
-				show.appendChild(p);
-			}
+			    }
+		    }else{
+			    show.appendChild(p);
+		    }
 		}
 	}
 	
@@ -51,7 +56,8 @@
 	right1.onclick = function(){
 		insert(2);
 	}
-	/*出*/
+	
+	//删除
 	function del(directions){
 		if(show.childNodes.length == 0){
 			alert("当前没有数字");
@@ -67,7 +73,6 @@
 			}else{
 				alert(directions.innerText);
 				show.removeChild(directions);
-				
 			}
 		}
 	}
@@ -79,6 +84,19 @@
 	}
 	show.onclick = function(){
 		del(event.target);
+	}
+	
+	//查找
+	function findIt(){
+		for(var i = 0; i < show.children.length; i++){
+			var pattern = new RegExp(finder.value, "g");
+			if(pattern.test(show.children[i].innerText)){
+				show.children[i].style.color = "black";
+			}
+		}
+	}
+	btn.onclick = function(){
+		findIt();
 	}
   </script>
 </body>
