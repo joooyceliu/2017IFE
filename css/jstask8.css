@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	padding: 0;
+	margin: 0;
+}
+div {
+	border: 1px solid black;
+	display: flex;
+	margin: 9px 5px;
+	font-size: 14px;
+}
+div#root {
+	width: 98%;
+	height: 100px;
+	margin: auto;
+}
+div.right {
+	width: 8%;
+}
