@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+label {
+	font-size: 14px;
+	width: 60%;
+	float: left;
+	text-align: right;
+	margin-top: 20px;
+}
+input {
+	margin-left: 30px;
+	height: 34px;
+	width: 300px;
+	border-radius: 4px;
+	border: 1px solid #d6d6d6;
+}
+input#submit {
+	height: 34px;
+	width: 60px;
+	background-color: #28629D;
+	color: white;
+	border-radius: 4px;
+	border: 1px solid #28629d;
+	font-size: 14px;
+}
+p {
+	font-size: 12px;
+	text-align: left;
+	margin-left: 57%;
+}
