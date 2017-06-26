@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+#choose{
+	margin: 40px 40px 40px 70px;
+}
+#choose input {
+	margin: 8px;
+}
+#choose label {
+	margin-right: 160px;
+}
+#inShow label {
+	margin: 0 14px 0 26px;
+}
+#inShow select {
+	width: 200px;
+	font-size: 60px;
+	margin-right: 30px;
+}
+#outShow input {
+	margin: 12px;
+	width: 400px;
+	height: 30px;
+	border-radius: 6px;
+	border: 1px solid #d6d6d6;
+}
+#inShow, #outShow, #school2 {
+	display: none;
+}

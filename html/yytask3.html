@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>yytask3</title>
+<link href="../css/yytask3.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <form action="" method="get">
+    <div id="choose">
+      <label><input type="radio" name="radio" id="in" />在校生</label>
+      <label><input type="radio" name="radio" id="out" />非在校生</label>
+    </div>
+    <div id="inShow">
+      <label>学校</label>
+      <select name="city" id="city" onchange="change(this.value)">
+        <option value="beijing">北京</option>
+        <option value="wuhan">武汉</option>
+      </select>
+      <select name="school1" id="school1">
+        <option value="school11">北京大学</option>
+        <option value="school12">清华大学</option>
+      </select>
+      <select name="school2" id="school2">
+        <option value="school21">武汉大学</option>
+        <option value="school22">华中科技大学</option>
+      </select>
+    </div>
+    <div id="outShow">
+      <label>就业单位<input type="text" name="text" id="text" /></label>
+    </div>
+  </form>
+  
+  <script type="text/javascript" src="../scripts/yytask3.js">
+  </script>
+</body>
+</html>
