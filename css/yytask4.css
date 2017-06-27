@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-collapse: collapse;
+	margin: 10px auto;
+	border: none;
+	position: relative;
+}
+table td {
+	border: 1px solid #d6d6d6;
+	height: 20px;
+	width: 20px;
+}
+tr:nth-child(1) td {
+	border: none;     /*第一行的所有td无边框*/
+	text-align: center;
+}
+tr td:nth-child(1) {
+	border: none;     /*第一列的所有td无边框*/
+	text-align: right;
+	padding-right: 4px;
+}
+tr:nth-child(1) td, tr:nth-child(11) td {
+	border-bottom: 1px solid black;     /*第一行，第11行加黑色底边框*/
+}
+tr td:nth-child(1), tr td:nth-child(11) {
+	border-right: 1px solid black;     /*第一列，第11列加黑色右边框*/
+}
+tr:nth-child(1) td:nth-child(1) {
+	border: none;     /*第一行第一列的td（即左上角第一格）无边框*/
+}
+tr:nth-child(11) td:nth-child(1) {
+	border-bottom: none;     /*第11行第一列的td（即左下角第一格）无边框*/
+}
+tr:nth-child(1) td:nth-child(11) {
+	border-right: none;     /*第一行第11列的td（即右上角第一格）无边框*/
+}
+table div#red {
+	position: absolute;
+	top: 126px;
+	left: 130px;
+	height: 20px;
+	width: 20px;
+	background-color: red;
+}
+table div#blue {
+	height: 30%;
+	width: 100%;
+	background-color: blue;
+	position: absolute;
+}
+div#order {
+	width: 200px;
+	margin: auto;
+}
+
+
+
