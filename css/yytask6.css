@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+div#main {
+	display: none;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+}
+div#container {
+	border: 1px solid black;
+	width: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	cursor: move;
+	background: white;
+}
+div h1 {
+	font-size: 16px;
+	border-bottom: 1px solid black;
+	padding: 8px;
+	background-color: #959494;
+	color: white;
+}
+div p {
+	font-size: 16px;
+	padding: 20px 8px;
+}
+div	input {
+	width: 90px;
+	font-size: 16px;
+	line-height: 30px;
+	background-color: #959494;
+	color: white;
+	border: 1px solid black;
+	margin: 10px;
+	float: right;
+}
